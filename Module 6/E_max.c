@@ -1,8 +1,10 @@
 //https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/E
 
 #include<stdio.h>
-int main(){
-    int nValue, n,max = 0;
+#include<limits.h>
+int main(){ 
+    // we need to set the max value to INT_MIN when we are finding the maximum value of any negative or positive value group.
+    int nValue, n,max = INT_MIN;
     scanf("%d",&nValue);
     for (int i = 1; i <= nValue; i++)
     {
