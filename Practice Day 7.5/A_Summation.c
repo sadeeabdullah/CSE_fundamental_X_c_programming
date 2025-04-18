@@ -3,21 +3,18 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-    int arr_para;
-    long long int sum =0,n;
+    int arr_para,n;
+    long long int sum =0;
     scanf("%d",&arr_para);
     int arr[arr_para];
     for (int i = 0; i < arr_para; i++)
     {
-        scanf("%lld",&n);
+        scanf("%d",&n);
         sum+=n;
     }
-    if (sum < 0)
-    {
-        sum *= -1;
-    }
+   
     
-    printf("%lld",sum);
+    printf("%lld",llabs(sum));
     
     return 0;
 }
