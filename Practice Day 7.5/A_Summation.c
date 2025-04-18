@@ -12,7 +12,12 @@ int main(){
         scanf("%lld",&n);
         sum+=n;
     }
-    printf("%d",abs(sum));
+    if (sum < 0)
+    {
+        sum *= -1;
+    }
+    
+    printf("%lld",sum);
     
     return 0;
 }
