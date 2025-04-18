@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 int main(){
-    int n,nValue,x,output = 0;
+    int n,nValue,x,output = -1;
     scanf("%d",&n);
     int arr[n];
 
@@ -19,9 +19,9 @@ int main(){
     {
         if (arr[i] == x)
         {
+            
             output = i;
-        }else{
-            output = -1;
+            break;
         }
         
 
