@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 int main(){
-    int n,nValue,x;
+    int n,nValue,x,output = 0;
     scanf("%d",&n);
     int arr[n];
 
@@ -11,11 +11,22 @@ int main(){
         scanf("%d",&nValue);
         arr[i]= nValue;
     }
+    
+
+    scanf("%d",&x);
 
     for (int i = 0; i < n; i++)
     {
-        printf("%d ",arr[i]);
+        if (arr[i] == x)
+        {
+            output = i;
+        }else{
+            output = -1;
+        }
+        
+
     }
+    printf("%d",output);
     
     
 
