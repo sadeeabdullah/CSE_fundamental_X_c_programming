@@ -18,7 +18,9 @@ int main(){
         arr[i - 1] = arr[i];
     }
 
-    for (int i = 0; i < n; i++)
+    //showing the updated array
+    // it is static array we can't change the array size
+    for (int i = 0; i < n -1 ; i++)
     {
         printf("%d ", arr[i]);
     }
