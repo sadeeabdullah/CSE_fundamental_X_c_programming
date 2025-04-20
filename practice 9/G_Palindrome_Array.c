@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 int main(){
-    int n, checker;
+    int n, checker = 1;
     scanf("%d",&n);
     int arr[n];
 
@@ -15,10 +15,8 @@ int main(){
     int i = 0, j = n-1;
     while (i < j)
     {
-        if (arr[i] == arr[j])
+        if (arr[i] != arr[j])
         {
-            checker = 1;
-        }else{
             checker = 0;
         }
         i++;
