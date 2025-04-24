@@ -3,8 +3,6 @@ int main()
 {
     char x[21], y[21];
     scanf("%s\n %s", x, y);
-    int length_x = strlen(x);
-    int length_y = strlen(y);
 
     for (int i = 0;;)
     {
