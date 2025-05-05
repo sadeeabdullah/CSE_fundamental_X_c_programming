@@ -1,4 +1,5 @@
-#include<stdio.h>
+
+//https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/W#include<stdio.h>
 int main(){
     int n;
     scanf("%d", &n);
