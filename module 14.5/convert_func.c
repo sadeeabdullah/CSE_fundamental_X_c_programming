@@ -1,5 +1,5 @@
 #include<stdio.h>
-int cnvrt( char x){
+void cnvrt( char x){
       printf("%d",x);
 }
 int main(){
