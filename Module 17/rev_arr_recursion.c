@@ -1,7 +1,7 @@
 #include<stdio.h>
 void print_rev_arr(int arr[], int n, int i){
     int idx = i;
-    if (idx == n)
+    if (idx == n) //base case
     {
         return;
     }
