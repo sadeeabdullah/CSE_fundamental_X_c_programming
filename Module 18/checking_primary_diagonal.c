@@ -12,15 +12,7 @@ int main(){
         for (int j = 0; j < c; j++)
         {
             scanf("%d", &arr[i][j]);
-            if (i == j)
-            {
-                if (arr[i][j] == 0)
-                {
-                    diagonal_val_chck = 0;
-                    break;
-                }
-                
-            }
+           
             if (i != j)
             {
                 if (arr[i][j] != 0)
