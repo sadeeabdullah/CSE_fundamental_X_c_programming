@@ -1,1 +1,1 @@
-This is scalar or diagonal matrix
+This is not unit  diagonal matrix

@@ -5,7 +5,7 @@ int main(){
     scanf("%d %d", &r, &c);
     int arr[r][c];
 
-    int diagonal_val;
+    int diagonal_val = 1;
     int scalar_chck = true;
 
    if (r == c)
@@ -25,11 +25,7 @@ int main(){
                 
             }
             if (i == j)
-            {
-                if (i == 0 && j == 0)
-                {
-                    diagonal_val = arr[i][j];
-                }else if (arr[i][j] != diagonal_val)
+            { if (arr[i][j] != diagonal_val)
                 {
                     scalar_chck = false;
                 }
@@ -42,13 +38,13 @@ int main(){
     }
     if (scalar_chck)
     {
-        printf("This is scalar  diagonal matrix");
+        printf("This is unit  diagonal matrix");
     }else{
-    printf("This is not scalar  diagonal matrix");
+    printf("This is not unit  diagonal matrix");
    }
     
 }else{
-    printf("This is not scalar  diagonal matrix");
+    printf("This is not unit  diagonal matrix");
    }
    
     
