@@ -1,9 +1,10 @@
 #include<stdio.h>
+#include<stdbool.h>
 int main(){
     int r, c;
     scanf("%d %d", &r, &c);
     int arr[r][c];
-    int diagonal_val_chck = 1;
+    int diagonal_val_chck = true;
     
     //taking input of the row
     for (int i = 0; i < r; i++)
@@ -17,7 +18,7 @@ int main(){
             {
                 if (arr[i][j] != 0)
             {
-                diagonal_val_chck = 0;
+                diagonal_val_chck = false;
                 break;
             }
             }
@@ -28,7 +29,7 @@ int main(){
         
     }
 
-    if (r == c && diagonal_val_chck == 1)
+    if (r == c && diagonal_val_chck )
     {
         printf("This is diagonal matrix");
     }else{
