@@ -1,0 +1,1 @@
+hello fasm i am writing from the gets function
