@@ -10,18 +10,20 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    for (int i = 0; i < n; i++)
+    int left = 0,right = n - 1;
+
+    for (; left <= right;)
     {
-        for(int j = n - 1; j >= 0; j--){
-            if (i < j)
-            {
-                arr[i + 1] = arr[j];
-                arr[i + 2] = arr[i + 1];
-                arr[i + 3] = arr[j-1];
-                arr[i + 4] = arr
-            }
-            
+        if (left ==right)
+        {
+            printf("%d ", arr[left]);
+        }else{
+
+            printf("%d %d ", arr[left], arr[right]);
         }
+        
+        left++;
+        right--;
     }
     
     
