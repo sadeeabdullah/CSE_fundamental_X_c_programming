@@ -11,10 +11,11 @@ bool is_lucky(int num){
         {
             return false;
         }
-
-        return true;
+        num /= 10;
+        
         
     }
+    return true;
     
 }
 //almost lucky number is also divisible by some ( it can be more than 2)
