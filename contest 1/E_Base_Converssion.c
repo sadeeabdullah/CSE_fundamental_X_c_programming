@@ -5,8 +5,8 @@ void rec(int n)
     {
         return;
     }
-    int binary = n % 2;
     rec(n / 2);
+    int binary = n % 2;
     printf("%d", binary);
     
 }

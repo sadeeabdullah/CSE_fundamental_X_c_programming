@@ -1,24 +1,33 @@
-#include<stdio.h>
-void rec(int n, int i, int star,int space){
-    if (i > n)
-    {
+#include <stdio.h>
+
+void print(int n, int k, int s) {
+    if (n < 1)
         return;
-    }
-    for (int j = space-1; j > 0; j--)
-    {
+
+    // space print
+    for (int i = 0; i < k; i++) {
         printf(" ");
     }
-    for (int k = 1; k <= star; k++)
-    {
+
+    // star print
+    for (int i = 0; i < s; i++) {
         printf("*");
     }
+
+    // print newline
     printf("\n");
-    rec(n,i + 1,star + 2,space - 1);
-    
+
+    // call recursive function
+    print(n - 1, k - 1, s + 2);
 }
-int main(){
+
+int main() {
     int n;
     scanf("%d", &n);
-    rec(n, 1,1,n);
+
+    // s for star and k for space
+    int k = n - 1, s = 1;
+    print(n, k, s);
+
     return 0;
 }
